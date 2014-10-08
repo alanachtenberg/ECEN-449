@@ -1,0 +1,7 @@
+5.
+
+(a) Since all of the calls to gcc the input is wrong(the input should be the .c file not the .o file) it will not generate any new files. If you correct that mistake ie. replacing gcc -c mp3_main.o with gcc -c mp3_main.c and the others like it. there will be 4 new files generated. The files would be mp3_codec.o mp3_utils.o mp3_codec.o, the mp3_codec gets linked after.
+
+(b) mp3_codec.o gets regenerated along with the final executable mp3_codec being linked immediately after.
+
+(c) There are no new files, because the clean is called after all of the object files are made and thus deleting them. This prevents the linking of our executable mp3_codec as well, However if you place the clean at the beginning of the list in the 1st line of the makefile like so: mp3codec: clean mp3 main.o mp3 utils.o mp3 codec.o . The make file will remove all of the object files before running make and every object file and final executable will be regenerated.

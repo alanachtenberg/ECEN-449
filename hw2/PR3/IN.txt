@@ -1,0 +1,1 @@
+this text will be reversed by word instead of characters
