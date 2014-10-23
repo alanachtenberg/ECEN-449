@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/devl/synthesis/multiply_xst.prj"
+-top multiply
+-p virtex5
+-ofn "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/devl/synthesis/multiply_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib multiply_v1_00_a

@@ -1,0 +1,16 @@
+/homes/ugrad/alanachtenberg/Lab3/implementation/system.ngc 1412299445
+/homes/ugrad/alanachtenberg/Lab3/implementation/microblaze_0_wrapper.ngc 1412299411
+/homes/ugrad/alanachtenberg/Lab3/implementation/mb_plb_wrapper.ngc 1412299411
+/homes/ugrad/alanachtenberg/Lab3/implementation/ilmb_wrapper.ngc 1412299411
+/homes/ugrad/alanachtenberg/Lab3/implementation/dlmb_wrapper.ngc 1412299411
+/homes/ugrad/alanachtenberg/Lab3/implementation/dlmb_cntlr_wrapper.ngc 1412299411
+/homes/ugrad/alanachtenberg/Lab3/implementation/ilmb_cntlr_wrapper.ngc 1412299411
+/homes/ugrad/alanachtenberg/Lab3/implementation/lmb_bram_wrapper.ngc 1412299411
+/homes/ugrad/alanachtenberg/Lab3/implementation/rs232_uart_1_wrapper.ngc 1412299411
+/homes/ugrad/alanachtenberg/Lab3/implementation/clock_generator_0_wrapper.ngc 1412299411
+/homes/ugrad/alanachtenberg/Lab3/implementation/debug_module_wrapper.ngc 1412299412
+/homes/ugrad/alanachtenberg/Lab3/implementation/proc_sys_reset_0_wrapper.ngc 1412299412
+/homes/ugrad/alanachtenberg/Lab3/implementation/leds_wrapper.ngc 1412299412
+/homes/ugrad/alanachtenberg/Lab3/implementation/inputs_wrapper.ngc 1412299412
+/homes/ugrad/alanachtenberg/Lab3/implementation/multiply_0_wrapper.ngc 1412299424
+OK

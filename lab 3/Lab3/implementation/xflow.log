@@ -1,0 +1,491 @@
+Release 10.1.03 Xflow K.39 (lin64)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+xflow -wd implementation -p xc5vlx110tff1136-1 -implement xflow.opt system.ngc  
+PMSPEC -- Overriding Xilinx file
+</softwares/Linux/xilinx/10.1/EDK/virtex5/data/virtex5.acd> with local file
+</softwares/Linux/xilinx/10.1/ISE/virtex5/data/virtex5.acd>
+
+Using Flow File: /homes/ugrad/alanachtenberg/Lab3/implementation/fpga.flw 
+Using Option File(s): 
+ /homes/ugrad/alanachtenberg/Lab3/implementation/xflow.opt 
+
+Creating Script File ... 
+
+#----------------------------------------------#
+# Starting program ngdbuild
+# ngdbuild -p xc5vlx110tff1136-1 -nt timestamp -bm system.bmm
+"/homes/ugrad/alanachtenberg/Lab3/implementation/system.ngc" -uc system.ucf
+system.ngd 
+#----------------------------------------------#
+Release 10.1.03 - ngdbuild K.39 (lin64)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+</softwares/Linux/xilinx/10.1/EDK/virtex5/data/virtex5.acd> with local file
+</softwares/Linux/xilinx/10.1/ISE/virtex5/data/virtex5.acd>
+
+Command Line: /softwares/Linux/xilinx/10.1/ISE/bin/lin64/unwrapped/ngdbuild -p
+xc5vlx110tff1136-1 -nt timestamp -bm system.bmm
+/homes/ugrad/alanachtenberg/Lab3/implementation/system.ngc -uc system.ucf
+system.ngd
+
+Reading NGO file "/homes/ugrad/alanachtenberg/Lab3/implementation/system.ngc"
+...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/microblaze_0_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/mb_plb_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/ilmb_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/dlmb_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/dlmb_cntlr_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/ilmb_cntlr_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/lmb_bram_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/rs232_uart_1_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/clock_generator_0_wrapper.ngc".
+..
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/debug_module_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/proc_sys_reset_0_wrapper.ngc"..
+.
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/leds_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/inputs_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/multiply_0_wrapper.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Applying constraints in "system.ucf" to the design...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into PLL_ADV instance
+   clock_generator_0/Using_PLL0.PLL0_INST/PLL_INST/Using_PLL_ADV.PLL_ADV_inst.
+   The following new TNM groups and period specifications were generated at the
+   PLL_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_clock_generator_0_clock_generator_0_PLL0_CLK_OUT_0_ =
+   PERIOD "clock_generator_0_clock_generator_0_PLL0_CLK_OUT_0_" TS_sys_clk_pin /
+   1.25 HIGH 50%>
+
+Done...
+Checking Partitions ...
+
+Processing BMM file ...
+
+Checking expanded design ...
+WARNING:NgdBuild:486 - Attribute "SIM_MODE" is not allowed on symbol
+   "microblaze_0/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Archi
+   tectures.No_MUL64.dsp_module_I3/Using_Virtex5.DSP48E_I1" of type "DSP48E". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_MODE" is not allowed on symbol
+   "microblaze_0/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Archi
+   tectures.No_MUL64.dsp_module_I2/Using_Virtex5.DSP48E_I1" of type "DSP48E". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_MODE" is not allowed on symbol
+   "microblaze_0/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Archi
+   tectures.dsp_module_I1/Using_Virtex5.DSP48E_I1" of type "DSP48E".  This
+   attribute will be ignored.
+WARNING:NgdBuild:478 - clock net debug_module/bscan_drck1 with clock driver
+   debug_module/debug_module/BUFG_DRCK1 drives no clock pins
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   4
+
+Writing NGD file "system.ngd" ...
+
+Writing NGDBUILD log file "system.bld"...
+
+NGDBUILD done.
+
+
+
+#----------------------------------------------#
+# Starting program map
+# map -o system_map.ncd -w -pr b -ol high -timing system.ngd system.pcf 
+#----------------------------------------------#
+Release 10.1.03 - Map K.39 (lin64)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+</softwares/Linux/xilinx/10.1/EDK/data/Xdh_PrimTypeLib.xda> with local file
+</softwares/Linux/xilinx/10.1/ISE/data/Xdh_PrimTypeLib.xda>
+Using target part "5vlx110tff1136-1".
+Mapping design into LUTs...
+Writing file system_map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven packing...
+
+Phase 1.1
+Phase 1.1 (Checksum:108a9d6) REAL time: 10 secs 
+
+Phase 2.7
+Phase 2.7 (Checksum:108a9d6) REAL time: 10 secs 
+
+Phase 3.31
+Phase 3.31 (Checksum:10a2cbe) REAL time: 10 secs 
+
+Phase 4.33
+Phase 4.33 (Checksum:10a2cbe) REAL time: 16 secs 
+
+Phase 5.32
+Phase 5.32 (Checksum:10a2cbe) REAL time: 16 secs 
+
+Phase 6.2
+
+
+Phase 6.2 (Checksum:110386e) REAL time: 18 secs 
+
+Phase 7.30
+Phase 7.30 (Checksum:110386e) REAL time: 18 secs 
+
+Phase 8.3
+Phase 8.3 (Checksum:110386e) REAL time: 18 secs 
+
+Phase 9.5
+Phase 9.5 (Checksum:110386e) REAL time: 18 secs 
+
+Phase 10.8
+........................................
+..........
+......
+....
+...............
+...............
+...............
+...............
+Phase 10.8 (Checksum:276e6c1b) REAL time: 29 secs 
+
+Phase 11.29
+Phase 11.29 (Checksum:276e6c1b) REAL time: 29 secs 
+
+Phase 12.5
+Phase 12.5 (Checksum:276e6c1b) REAL time: 29 secs 
+
+Phase 13.18
+Phase 13.18 (Checksum:27f009d3) REAL time: 1 mins 7 secs 
+
+Phase 14.5
+Phase 14.5 (Checksum:27f009d3) REAL time: 1 mins 7 secs 
+
+Phase 15.34
+Phase 15.34 (Checksum:27f009d3) REAL time: 1 mins 7 secs 
+
+REAL time consumed by placer: 1 mins 7 secs 
+CPU  time consumed by placer: 1 mins 6 secs 
+
+Design Summary:
+Number of errors:      0
+Number of warnings:  131
+Slice Logic Utilization:
+  Number of Slice Registers:                 1,946 out of  69,120    2%
+    Number used as Flip Flops:               1,945
+    Number used as Latches:                      1
+  Number of Slice LUTs:                      1,637 out of  69,120    2%
+    Number used as logic:                    1,489 out of  69,120    2%
+      Number using O6 output only:           1,371
+      Number using O5 output only:              49
+      Number using O5 and O6:                   69
+    Number used as Memory:                     143 out of  17,920    1%
+      Number used as Dual Port RAM:             64
+        Number using O5 and O6:                 64
+      Number used as Shift Register:            79
+        Number using O6 output only:            78
+        Number using O5 output only:             1
+    Number used as exclusive route-thru:         5
+  Number of route-thrus:                        57 out of 138,240    1%
+    Number using O6 output only:                52
+    Number using O5 output only:                 3
+    Number using O5 and O6:                      2
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 1,083 out of  17,280    6%
+  Number of LUT Flip Flop pairs used:        2,775
+    Number with an unused Flip Flop:           829 out of   2,775   29%
+    Number with an unused LUT:               1,138 out of   2,775   41%
+    Number of fully used LUT-FF pairs:         808 out of   2,775   29%
+    Number of unique control sets:             197
+    Number of slice register sites lost
+      to control set restrictions:             347 out of  69,120    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        17 out of     640    2%
+    IOB Flip Flops:                             16
+
+Specific Feature Utilization:
+  Number of BlockRAM/FIFO:                      32 out of     148   21%
+    Number using BlockRAM only:                 32
+    Total primitives used:
+      Number of 36k BlockRAM used:              32
+    Total Memory used (KB):                  1,152 out of   5,328   21%
+  Number of BUFG/BUFGCTRLs:                      3 out of      32    9%
+    Number used as BUFGs:                        3
+  Number of BSCANs:                              1 out of       4   25%
+  Number of DSP48Es:                             6 out of      64    9%
+  Number of PLL_ADVs:                            1 out of       6   16%
+
+Peak Memory Usage:  1051 MB
+Total REAL time to MAP completion:  1 mins 20 secs 
+Total CPU time to MAP completion:   1 mins 18 secs 
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.
+
+
+
+#----------------------------------------------#
+# Starting program par
+# par -w -ol high system_map.ncd system.ncd system.pcf 
+#----------------------------------------------#
+Release 10.1.03 - par K.39 (lin64)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file </softwares/Linux/xilinx/10.1/EDK/data/parBmgr.acd> with local file
+</softwares/Linux/xilinx/10.1/ISE/data/parBmgr.acd>
+
+
+
+Constraints file: system.pcf.
+Loading device for application Rf_Device from file '5vlx110t.nph' in environment
+/softwares/Linux/xilinx/10.1/ISE:/softwares/Linux/xilinx/10.1/EDK.
+   "system" is an NCD, version 3.2, device xc5vlx110t, package ff1136, speed -1
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.64 2008-12-19".
+
+
+
+Device Utilization Summary:
+
+   Number of BSCANs                          1 out of 4      25%
+   Number of BUFGs                           3 out of 32      9%
+   Number of DSP48Es                         6 out of 64      9%
+   Number of ILOGICs                         2 out of 800     1%
+   Number of External IOBs                  17 out of 640     2%
+      Number of LOCed IOBs                  17 out of 17    100%
+
+   Number of OLOGICs                        14 out of 800     1%
+   Number of PLL_ADVs                        1 out of 6      16%
+   Number of RAMB36_EXPs                    32 out of 148    21%
+   Number of Slice Registers              1946 out of 69120   2%
+      Number used as Flip Flops           1945
+      Number used as Latches                 1
+      Number used as LatchThrus              0
+
+   Number of Slice LUTS                   1637 out of 69120   2%
+   Number of Slice LUT-Flip Flop pairs    2775 out of 69120   4%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 8 secs 
+Finished initial Timing Analysis.  REAL time: 9 secs 
+
+Starting Router
+
+Phase 1: 15267 unrouted;       REAL time: 10 secs 
+
+Phase 2: 12315 unrouted;       REAL time: 10 secs 
+
+Phase 3: 3947 unrouted;       REAL time: 13 secs 
+
+Phase 4: 3947 unrouted; (57487)      REAL time: 17 secs 
+
+Phase 5: 3991 unrouted; (7576)      REAL time: 20 secs 
+
+Phase 6: 3998 unrouted; (0)      REAL time: 21 secs 
+
+Phase 7: 0 unrouted; (0)      REAL time: 25 secs 
+
+Updating file: system.ncd with current fully routed design.
+
+Phase 8: 0 unrouted; (0)      REAL time: 26 secs 
+
+Phase 9: 0 unrouted; (0)      REAL time: 26 secs 
+
+Phase 10: 0 unrouted; (0)      REAL time: 30 secs 
+
+Total REAL time to Router completion: 30 secs 
+Total CPU time to Router completion: 30 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|  dlmb_port_BRAM_Clk | BUFGCTRL_X0Y1| No   |  872 |  0.613     |  2.143      |
++---------------------+--------------+------+------+------------+-------------+
+|debug_module/Dbg_Clk |              |      |      |            |             |
+|                  _1 | BUFGCTRL_X0Y0| No   |   68 |  0.371     |  1.913      |
++---------------------+--------------+------+------+------------+-------------+
+|debug_module/Dbg_Upd |              |      |      |            |             |
+|               ate_1 |         Local|      |   16 |  4.094     |  4.828      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0
+
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the constraint does not cover any paths or that it has no
+   requested value.
+Number of Timing Constraints that were not applied: 1
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
+                                            |         |    Slack   | Achievable | Errors |    Score   
+------------------------------------------------------------------------------------------------------
+  TS_clock_generator_0_clock_generator_0_PL | SETUP   |     0.195ns|     7.805ns|       0|           0
+  L0_CLK_OUT_0_ = PERIOD TIMEGRP         "c | HOLD    |     0.423ns|            |       0|           0
+  lock_generator_0_clock_generator_0_PLL0_C |         |            |            |        |            
+  LK_OUT_0_" TS_sys_clk_pin /         1.25  |         |            |            |        |            
+  HIGH 50%                                  |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | N/A     |         N/A|         N/A|     N/A|         N/A
+  pin" 10 ns HIGH 50%                       |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_sys_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk_pin                 |     10.000ns|          N/A|      9.756ns|            0|            0|            0|       406260|
+| TS_clock_generator_0_clock_gen|      8.000ns|      7.805ns|          N/A|            0|            0|       406260|            0|
+| erator_0_PLL0_CLK_OUT_0_      |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 40 secs 
+Total CPU time to PAR completion: 35 secs 
+
+Peak Memory Usage:  776 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file system.ncd
+
+
+
+PAR done!
+
+
+
+#----------------------------------------------#
+# Starting program post_par_trce
+# trce -e 3 -xml system.twx system.ncd system.pcf 
+#----------------------------------------------#
+Release 10.1.03 - Trace  (lin64)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+
+PMSPEC -- Overriding Xilinx file
+</softwares/Linux/xilinx/10.1/EDK/virtex5/data/virtex5.acd> with local file
+</softwares/Linux/xilinx/10.1/ISE/virtex5/data/virtex5.acd>
+Loading device for application Rf_Device from file '5vlx110t.nph' in environment
+/softwares/Linux/xilinx/10.1/ISE:/softwares/Linux/xilinx/10.1/EDK.
+   "system" is an NCD, version 3.2, device xc5vlx110t, package ff1136, speed -1
+--------------------------------------------------------------------------------
+Release 10.1.03 Trace  (lin64)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+/softwares/Linux/xilinx/10.1/ISE/bin/lin64/unwrapped/trce -e 3 -xml system.twx
+system.ncd system.pcf
+
+
+Design file:              system.ncd
+Physical constraint file: system.pcf
+Device,speed:             xc5vlx110t,-1 (PRODUCTION 1.64 2008-12-19, STEPPING
+level 0)
+Report level:             error report
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on a
+   50 Ohm transmission line loading model.  For the details of this model, and
+   for more information on accounting for different loading conditions, please
+   see the device datasheet.
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover 406260 paths, 0 nets, and 10653 connections
+
+Design statistics:
+   Minimum period:   7.805ns (Maximum frequency: 128.123MHz)
+
+
+Analysis completed Thu Oct  2 20:54:17 2014
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Number of info messages: 2
+Total time: 10 secs 
+
+

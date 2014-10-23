@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          /homes/ugrad/alanachtenberg/Lab3/drivers/multiply_v1_00_a/data/multiply_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Thu Oct  2 20:04:37 2014 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER multiply
+
+  OPTION supported_peripherals = (multiply);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

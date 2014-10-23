@@ -1,0 +1,10 @@
+-batch 
+-create multiply 
+-ver 1.00.a 
+-dir "/homes/ugrad/alanachtenberg/Lab3" 
+-lang verilog 
+-bus plbv46 s 
+-reg 3 
+-xps 
+-ise 
+-driver 

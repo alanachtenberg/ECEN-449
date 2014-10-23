@@ -1,0 +1,12 @@
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc5vlx110tff1136-1
+-top inputs_wrapper
+-ifmt MIXED
+-ifn inputs_wrapper_xst.prj
+-ofn ../implementation/inputs_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation/inputs_wrapper}

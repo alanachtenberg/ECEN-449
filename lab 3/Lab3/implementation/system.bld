@@ -1,0 +1,92 @@
+Release 10.1.03 ngdbuild K.39 (lin64)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: /softwares/Linux/xilinx/10.1/ISE/bin/lin64/unwrapped/ngdbuild -p
+xc5vlx110tff1136-1 -nt timestamp -bm system.bmm
+/homes/ugrad/alanachtenberg/Lab3/implementation/system.ngc -uc system.ucf
+system.ngd
+
+Reading NGO file "/homes/ugrad/alanachtenberg/Lab3/implementation/system.ngc"
+...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/microblaze_0_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/mb_plb_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/ilmb_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/dlmb_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/dlmb_cntlr_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/ilmb_cntlr_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/lmb_bram_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/rs232_uart_1_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/clock_generator_0_wrapper.ngc".
+..
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/debug_module_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/proc_sys_reset_0_wrapper.ngc"..
+.
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/leds_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/inputs_wrapper.ngc"...
+Loading design module
+"/homes/ugrad/alanachtenberg/Lab3/implementation/multiply_0_wrapper.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Applying constraints in "system.ucf" to the design...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into PLL_ADV instance
+   clock_generator_0/Using_PLL0.PLL0_INST/PLL_INST/Using_PLL_ADV.PLL_ADV_inst.
+   The following new TNM groups and period specifications were generated at the
+   PLL_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_clock_generator_0_clock_generator_0_PLL0_CLK_OUT_0_ =
+   PERIOD "clock_generator_0_clock_generator_0_PLL0_CLK_OUT_0_" TS_sys_clk_pin /
+   1.25 HIGH 50%>
+
+Done...
+Checking Partitions ...
+
+Processing BMM file ...
+
+Checking expanded design ...
+WARNING:NgdBuild:486 - Attribute "SIM_MODE" is not allowed on symbol
+   "microblaze_0/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Archi
+   tectures.No_MUL64.dsp_module_I3/Using_Virtex5.DSP48E_I1" of type "DSP48E". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_MODE" is not allowed on symbol
+   "microblaze_0/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Archi
+   tectures.No_MUL64.dsp_module_I2/Using_Virtex5.DSP48E_I1" of type "DSP48E". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_MODE" is not allowed on symbol
+   "microblaze_0/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Archi
+   tectures.dsp_module_I1/Using_Virtex5.DSP48E_I1" of type "DSP48E".  This
+   attribute will be ignored.
+WARNING:NgdBuild:478 - clock net debug_module/bscan_drck1 with clock driver
+   debug_module/debug_module/BUFG_DRCK1 drives no clock pins
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   4
+
+Total memory usage is 322832 kilobytes
+
+Writing NGD file "system.ngd" ...
+
+Writing NGDBUILD log file "system.bld"...

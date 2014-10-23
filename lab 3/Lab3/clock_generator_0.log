@@ -1,0 +1,42 @@
+/**
+ * clock_generator_0.log
+ */
+
+        
+    Running clock generation algorithm ...
+    For FAMILY is virtex5, using PLL+DCM architecture
+    Step 1: Try to generate required clocks that:
+      { Frequency: 0Hz < frequency <= 400MHz
+        Phase: any
+        Group: PLL0 or PLL0_ADJUST or PLL1 or PLL1_ADJUST
+        Not external feedback
+      }
+    Step 2: Try to generate required clocks that:
+      { Frequency: 0Hz < frequency <= 400MHz
+        Phase: any
+        Group: NONE
+        Not external feedback
+      }
+      There are 1 required clocks are not generated
+      Try to generate 1 of them in this step
+      Required clock: CLKOUT0
+      1. Try to use already instanced PLL's CLKOUTs
+        { Try to use instanced PLL's CLKOUT for CLKOUT0
+          Can not connect CLKGEN's CLKOUT0 to instanced PLL
+        }
+      2. Try to instance a PLL and connect to CLKGEN's CLKIN then use its CLKOUTs
+        { Try to instance PLL and connect its CLKIN to CLKIN
+          Instance PLL0 from CLKGEN's CLKIN
+        }
+        { Try to use instanced PLL's CLKOUT for CLKOUT0
+            try any-group PLL0
+          Connect CLKGEN's CLKOUT0 to PLL0.CLKOUT0
+        }
+    Step 3: Try to generate required clocks that:
+      { Frequency: 0Hz < frequency <= 400MHz
+        Phase: 0
+        Group: NONE
+        External feedback
+      }
+    Summary of using PLL with DCM for external feedback architecture
+      All required clocks are successfully generated

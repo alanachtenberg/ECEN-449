@@ -1,0 +1,144 @@
+Release 10.1.03 Map K.39 (lin64)
+Xilinx Map Application Log File for Design 'system'
+
+Design Information
+------------------
+Command Line   : map -o system_map.ncd -w -pr b -ol high -timing system.ngd
+system.pcf 
+Target Device  : xc5vlx110t
+Target Package : ff1136
+Target Speed   : -1
+Mapper Version : virtex5 -- $Revision: 1.46.12.2 $
+Mapped Date    : Thu Oct  2 20:52:04 2014
+
+Mapping design into LUTs...
+Writing file system_map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven packing...
+
+Phase 1.1
+Phase 1.1 (Checksum:108a9d6) REAL time: 10 secs 
+
+Phase 2.7
+Phase 2.7 (Checksum:108a9d6) REAL time: 10 secs 
+
+Phase 3.31
+Phase 3.31 (Checksum:10a2cbe) REAL time: 10 secs 
+
+Phase 4.33
+Phase 4.33 (Checksum:10a2cbe) REAL time: 16 secs 
+
+Phase 5.32
+Phase 5.32 (Checksum:10a2cbe) REAL time: 16 secs 
+
+Phase 6.2
+
+
+Phase 6.2 (Checksum:110386e) REAL time: 18 secs 
+
+Phase 7.30
+Phase 7.30 (Checksum:110386e) REAL time: 18 secs 
+
+Phase 8.3
+Phase 8.3 (Checksum:110386e) REAL time: 18 secs 
+
+Phase 9.5
+Phase 9.5 (Checksum:110386e) REAL time: 18 secs 
+
+Phase 10.8
+........................................
+..........
+......
+....
+...............
+...............
+...............
+...............
+Phase 10.8 (Checksum:276e6c1b) REAL time: 29 secs 
+
+Phase 11.29
+Phase 11.29 (Checksum:276e6c1b) REAL time: 29 secs 
+
+Phase 12.5
+Phase 12.5 (Checksum:276e6c1b) REAL time: 29 secs 
+
+Phase 13.18
+Phase 13.18 (Checksum:27f009d3) REAL time: 1 mins 7 secs 
+
+Phase 14.5
+Phase 14.5 (Checksum:27f009d3) REAL time: 1 mins 7 secs 
+
+Phase 15.34
+Phase 15.34 (Checksum:27f009d3) REAL time: 1 mins 7 secs 
+
+REAL time consumed by placer: 1 mins 7 secs 
+CPU  time consumed by placer: 1 mins 6 secs 
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:  131
+Slice Logic Utilization:
+  Number of Slice Registers:                 1,946 out of  69,120    2%
+    Number used as Flip Flops:               1,945
+    Number used as Latches:                      1
+  Number of Slice LUTs:                      1,637 out of  69,120    2%
+    Number used as logic:                    1,489 out of  69,120    2%
+      Number using O6 output only:           1,371
+      Number using O5 output only:              49
+      Number using O5 and O6:                   69
+    Number used as Memory:                     143 out of  17,920    1%
+      Number used as Dual Port RAM:             64
+        Number using O5 and O6:                 64
+      Number used as Shift Register:            79
+        Number using O6 output only:            78
+        Number using O5 output only:             1
+    Number used as exclusive route-thru:         5
+  Number of route-thrus:                        57 out of 138,240    1%
+    Number using O6 output only:                52
+    Number using O5 output only:                 3
+    Number using O5 and O6:                      2
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 1,083 out of  17,280    6%
+  Number of LUT Flip Flop pairs used:        2,775
+    Number with an unused Flip Flop:           829 out of   2,775   29%
+    Number with an unused LUT:               1,138 out of   2,775   41%
+    Number of fully used LUT-FF pairs:         808 out of   2,775   29%
+    Number of unique control sets:             197
+    Number of slice register sites lost
+      to control set restrictions:             347 out of  69,120    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        17 out of     640    2%
+    IOB Flip Flops:                             16
+
+Specific Feature Utilization:
+  Number of BlockRAM/FIFO:                      32 out of     148   21%
+    Number using BlockRAM only:                 32
+    Total primitives used:
+      Number of 36k BlockRAM used:              32
+    Total Memory used (KB):                  1,152 out of   5,328   21%
+  Number of BUFG/BUFGCTRLs:                      3 out of      32    9%
+    Number used as BUFGs:                        3
+  Number of BSCANs:                              1 out of       4   25%
+  Number of DSP48Es:                             6 out of      64    9%
+  Number of PLL_ADVs:                            1 out of       6   16%
+
+Peak Memory Usage:  1051 MB
+Total REAL time to MAP completion:  1 mins 20 secs 
+Total CPU time to MAP completion:   1 mins 18 secs 
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.

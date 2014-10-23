@@ -1,0 +1,266 @@
+Release 10.1.03 - platgen EDK_K_SP3.6 (lin64)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: platgen -p xc5vlx110tff1136-1 -lang vhdl -lp
+/homes/faculty/shared/ECEN449/EDK-XUPV5-LX110T-Pack/lib/ system.mhs 
+
+Parse system.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+INFO:MDT - IPNAME:microblaze_0 INSTANCE:microblaze -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v7
+   _10_d/data/microblaze_v2_1_0.mpd line 164 - tcl is overriding PARAMETER
+   C_ADDR_TAG_BITS value to 0
+INFO:MDT - IPNAME:microblaze_0 INSTANCE:microblaze -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v7
+   _10_d/data/microblaze_v2_1_0.mpd line 173 - tcl is overriding PARAMETER
+   C_DCACHE_ADDR_TAG value to 0
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x0001ffff) dlmb_cntlr	dlmb
+  (0000000000-0x0001ffff) ilmb_cntlr	ilmb
+  (0x81400000-0x8140ffff) LEDs	mb_plb
+  (0x81420000-0x8142ffff) INPUTS	mb_plb
+  (0x84000000-0x8400ffff) RS232_Uart_1	mb_plb
+  (0x84400000-0x8440ffff) debug_module	mb_plb
+  (0xc0a00000-0xc0a0ffff) multiply_0	mb_plb
+
+Check platform address map ...
+
+Computing clock values...
+
+Overriding system level properties ...
+INFO:MDT - IPNAME:microblaze_0 INSTANCE:microblaze -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v7
+   _10_d/data/microblaze_v2_1_0.mpd line 125 - tcl is overriding PARAMETER
+   C_D_PLB value to 1
+INFO:MDT - IPNAME:microblaze_0 INSTANCE:microblaze -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v7
+   _10_d/data/microblaze_v2_1_0.mpd line 126 - tcl is overriding PARAMETER
+   C_D_OPB value to 0
+INFO:MDT - IPNAME:microblaze_0 INSTANCE:microblaze -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v7
+   _10_d/data/microblaze_v2_1_0.mpd line 128 - tcl is overriding PARAMETER
+   C_I_PLB value to 1
+INFO:MDT - IPNAME:microblaze_0 INSTANCE:microblaze -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v7
+   _10_d/data/microblaze_v2_1_0.mpd line 129 - tcl is overriding PARAMETER
+   C_I_OPB value to 0
+INFO:MDT - IPNAME:microblaze_0 INSTANCE:microblaze -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v7
+   _10_d/data/microblaze_v2_1_0.mpd line 184 - tcl is overriding PARAMETER
+   C_USE_EXT_BRK value to 1
+INFO:MDT - IPNAME:microblaze_0 INSTANCE:microblaze -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v7
+   _10_d/data/microblaze_v2_1_0.mpd line 185 - tcl is overriding PARAMETER
+   C_USE_EXT_NM_BRK value to 1
+INFO:MDT - IPNAME:mb_plb INSTANCE:plb_v46 -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_03
+   _a/data/plb_v46_v2_1_0.mpd line 34 - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2
+INFO:MDT - IPNAME:mb_plb INSTANCE:plb_v46 -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_03
+   _a/data/plb_v46_v2_1_0.mpd line 35 - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 5
+INFO:MDT - IPNAME:mb_plb INSTANCE:plb_v46 -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_03
+   _a/data/plb_v46_v2_1_0.mpd line 36 - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1
+INFO:MDT - IPNAME:mb_plb INSTANCE:plb_v46 -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_03
+   _a/data/plb_v46_v2_1_0.mpd line 38 - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32
+INFO:MDT - IPNAME:ilmb INSTANCE:lmb_v10 -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v1_00
+   _a/data/lmb_v10_v2_1_0.mpd line 37 - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1
+INFO:MDT - IPNAME:dlmb INSTANCE:lmb_v10 -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v1_00
+   _a/data/lmb_v10_v2_1_0.mpd line 37 - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1
+INFO:MDT - IPNAME:dlmb_cntlr INSTANCE:lmb_bram_if_cntlr -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_c
+   ntlr_v2_10_a/data/lmb_bram_if_cntlr_v2_1_0.mpd line 43 - tcl is overriding
+   PARAMETER C_MASK value to 0x80000000
+INFO:MDT - IPNAME:ilmb_cntlr INSTANCE:lmb_bram_if_cntlr -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_c
+   ntlr_v2_10_a/data/lmb_bram_if_cntlr_v2_1_0.mpd line 43 - tcl is overriding
+   PARAMETER C_MASK value to 0x80000000
+INFO:MDT - IPNAME:lmb_bram INSTANCE:bram_block -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1
+   _00_a/data/bram_block_v2_1_0.mpd line 36 - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x20000
+INFO:MDT - IPNAME:RS232_Uart_1 INSTANCE:xps_uartlite -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_
+   v1_00_a/data/xps_uartlite_v2_1_0.mpd line 45 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2
+INFO:MDT - IPNAME:debug_module INSTANCE:mdm -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v1_00_d/d
+   ata/mdm_v2_1_0.mpd line 55 - tool is overriding PARAMETER C_SPLB_MID_WIDTH
+   value to 1
+INFO:MDT - IPNAME:debug_module INSTANCE:mdm -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v1_00_d/d
+   ata/mdm_v2_1_0.mpd line 56 - tool is overriding PARAMETER C_SPLB_NUM_MASTERS
+   value to 2
+INFO:MDT - IPNAME:LEDs INSTANCE:xps_gpio -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v1_0
+   0_a/data/xps_gpio_v2_1_0.mpd line 41 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2
+INFO:MDT - IPNAME:INPUTS INSTANCE:xps_gpio -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v1_0
+   0_a/data/xps_gpio_v2_1_0.mpd line 41 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2
+INFO:MDT - IPNAME:multiply_0 INSTANCE:multiply -
+   /homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/data/multiply_v2_1_0
+   .mpd line 28 - tool is overriding PARAMETER C_SPLB_DWIDTH value to 32
+INFO:MDT - IPNAME:multiply_0 INSTANCE:multiply -
+   /homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/data/multiply_v2_1_0
+   .mpd line 29 - tool is overriding PARAMETER C_SPLB_NUM_MASTERS value to 2
+INFO:MDT - IPNAME:multiply_0 INSTANCE:multiply -
+   /homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/data/multiply_v2_1_0
+   .mpd line 30 - tool is overriding PARAMETER C_SPLB_MID_WIDTH value to 1
+
+Running system level Update ...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Check platform configuration ...
+IPNAME:plb_v46 INSTANCE:mb_plb - /homes/ugrad/alanachtenberg/Lab3/system.mhs
+line 38 - 2 master(s) : 5 slave(s)
+IPNAME:lmb_v10 INSTANCE:ilmb - /homes/ugrad/alanachtenberg/Lab3/system.mhs line
+45 - 1 master(s) : 1 slave(s)
+IPNAME:lmb_v10 INSTANCE:dlmb - /homes/ugrad/alanachtenberg/Lab3/system.mhs line
+52 - 1 master(s) : 1 slave(s)
+
+Check port drivers...
+WARNING:MDT - PORT:IWAIT CONNECTOR:ilmb_LMB_Wait -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v7
+   _10_d/data/microblaze_v2_1_0.mpd line 199 - No driver found. Port will be
+   driven to GND!
+WARNING:MDT - PORT:DWAIT CONNECTOR:dlmb_LMB_Wait -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v7
+   _10_d/data/microblaze_v2_1_0.mpd line 235 - No driver found. Port will be
+   driven to GND!
+WARNING:MDT - PORT:bscan_tdo1 CONNECTOR:bscan_tdo1 -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v1_00_d/d
+   ata/mdm_v2_1_0.mpd line 197 - No driver found. Port will be driven to GND!
+WARNING:MDT - PORT:I_ADDRTAG CONNECTOR:ilmb_M_ADDRTAG -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v7
+   _10_d/data/microblaze_v2_1_0.mpd line 197 - floating connection!
+WARNING:MDT - PORT:D_ADDRTAG CONNECTOR:dlmb_M_ADDRTAG -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v7
+   _10_d/data/microblaze_v2_1_0.mpd line 238 - floating connection!
+WARNING:MDT - PORT:bscan_tdi CONNECTOR:bscan_tdi -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v1_00_d/d
+   ata/mdm_v2_1_0.mpd line 190 - floating connection!
+WARNING:MDT - PORT:bscan_reset CONNECTOR:bscan_reset -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v1_00_d/d
+   ata/mdm_v2_1_0.mpd line 191 - floating connection!
+WARNING:MDT - PORT:bscan_shift CONNECTOR:bscan_shift -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v1_00_d/d
+   ata/mdm_v2_1_0.mpd line 192 - floating connection!
+WARNING:MDT - PORT:bscan_update CONNECTOR:bscan_update -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v1_00_d/d
+   ata/mdm_v2_1_0.mpd line 193 - floating connection!
+WARNING:MDT - PORT:bscan_capture CONNECTOR:bscan_capture -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v1_00_d/d
+   ata/mdm_v2_1_0.mpd line 194 - floating connection!
+WARNING:MDT - PORT:bscan_sel1 CONNECTOR:bscan_sel1 -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v1_00_d/d
+   ata/mdm_v2_1_0.mpd line 195 - floating connection!
+WARNING:MDT - PORT:bscan_drck1 CONNECTOR:bscan_drck1 -
+   /softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v1_00_d/d
+   ata/mdm_v2_1_0.mpd line 196 - floating connection!
+WARNING:MDT - PORT:Peripheral_Reset CONNECTOR:sys_periph_reset -
+   /homes/ugrad/alanachtenberg/Lab3/system.mhs line 137 - floating connection!
+
+Performing Clock DRCs...
+
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+IPNAME:microblaze INSTANCE:microblaze_0 -
+/homes/ugrad/alanachtenberg/Lab3/system.mhs line 25 - Copying cache
+implementation netlist
+IPNAME:plb_v46 INSTANCE:mb_plb - /homes/ugrad/alanachtenberg/Lab3/system.mhs
+line 38 - Copying cache implementation netlist
+IPNAME:lmb_v10 INSTANCE:ilmb - /homes/ugrad/alanachtenberg/Lab3/system.mhs line
+45 - Copying cache implementation netlist
+IPNAME:lmb_v10 INSTANCE:dlmb - /homes/ugrad/alanachtenberg/Lab3/system.mhs line
+52 - Copying cache implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:dlmb_cntlr -
+/homes/ugrad/alanachtenberg/Lab3/system.mhs line 59 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:ilmb_cntlr -
+/homes/ugrad/alanachtenberg/Lab3/system.mhs line 68 - Copying cache
+implementation netlist
+IPNAME:bram_block INSTANCE:lmb_bram -
+/homes/ugrad/alanachtenberg/Lab3/system.mhs line 77 - Copying cache
+implementation netlist
+IPNAME:xps_uartlite INSTANCE:rs232_uart_1 -
+/homes/ugrad/alanachtenberg/Lab3/system.mhs line 84 - Copying cache
+implementation netlist
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+/homes/ugrad/alanachtenberg/Lab3/system.mhs line 99 - Copying cache
+implementation netlist
+IPNAME:mdm INSTANCE:debug_module - /homes/ugrad/alanachtenberg/Lab3/system.mhs
+line 114 - Copying cache implementation netlist
+IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
+/homes/ugrad/alanachtenberg/Lab3/system.mhs line 127 - Copying cache
+implementation netlist
+IPNAME:xps_gpio INSTANCE:leds - /homes/ugrad/alanachtenberg/Lab3/system.mhs line
+140 - Copying cache implementation netlist
+IPNAME:xps_gpio INSTANCE:inputs - /homes/ugrad/alanachtenberg/Lab3/system.mhs
+line 151 - Copying cache implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:lmb_bram -
+/homes/ugrad/alanachtenberg/Lab3/system.mhs line 77 - elaborating IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 0.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+INFO:MDT - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized.
+INSTANCE:multiply_0 - /homes/ugrad/alanachtenberg/Lab3/system.mhs line 161 -
+Running XST synthesis
+
+Running NGCBUILD ...
+
+Rebuilding cache ...
+
+Total run time: 14.00 seconds

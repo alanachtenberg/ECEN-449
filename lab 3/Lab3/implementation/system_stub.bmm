@@ -1,0 +1,42 @@
+// File: /homes/ugrad/alanachtenberg/Lab3/implementation/system_stub.bmm
+
+ADDRESS_MAP microblaze_0 MICROBLAZE 100
+	ADDRESS_SPACE lmb_bram_combined COMBINED [0x00000000:0x0001ffff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/lmb_bram/lmb_bram/ramb36_0 [31:31] ;
+			system_i/lmb_bram/lmb_bram/ramb36_1 [30:30] ;
+			system_i/lmb_bram/lmb_bram/ramb36_2 [29:29] ;
+			system_i/lmb_bram/lmb_bram/ramb36_3 [28:28] ;
+			system_i/lmb_bram/lmb_bram/ramb36_4 [27:27] ;
+			system_i/lmb_bram/lmb_bram/ramb36_5 [26:26] ;
+			system_i/lmb_bram/lmb_bram/ramb36_6 [25:25] ;
+			system_i/lmb_bram/lmb_bram/ramb36_7 [24:24] ;
+			system_i/lmb_bram/lmb_bram/ramb36_8 [23:23] ;
+			system_i/lmb_bram/lmb_bram/ramb36_9 [22:22] ;
+			system_i/lmb_bram/lmb_bram/ramb36_10 [21:21] ;
+			system_i/lmb_bram/lmb_bram/ramb36_11 [20:20] ;
+			system_i/lmb_bram/lmb_bram/ramb36_12 [19:19] ;
+			system_i/lmb_bram/lmb_bram/ramb36_13 [18:18] ;
+			system_i/lmb_bram/lmb_bram/ramb36_14 [17:17] ;
+			system_i/lmb_bram/lmb_bram/ramb36_15 [16:16] ;
+			system_i/lmb_bram/lmb_bram/ramb36_16 [15:15] ;
+			system_i/lmb_bram/lmb_bram/ramb36_17 [14:14] ;
+			system_i/lmb_bram/lmb_bram/ramb36_18 [13:13] ;
+			system_i/lmb_bram/lmb_bram/ramb36_19 [12:12] ;
+			system_i/lmb_bram/lmb_bram/ramb36_20 [11:11] ;
+			system_i/lmb_bram/lmb_bram/ramb36_21 [10:10] ;
+			system_i/lmb_bram/lmb_bram/ramb36_22 [9:9] ;
+			system_i/lmb_bram/lmb_bram/ramb36_23 [8:8] ;
+			system_i/lmb_bram/lmb_bram/ramb36_24 [7:7] ;
+			system_i/lmb_bram/lmb_bram/ramb36_25 [6:6] ;
+			system_i/lmb_bram/lmb_bram/ramb36_26 [5:5] ;
+			system_i/lmb_bram/lmb_bram/ramb36_27 [4:4] ;
+			system_i/lmb_bram/lmb_bram/ramb36_28 [3:3] ;
+			system_i/lmb_bram/lmb_bram/ramb36_29 [2:2] ;
+			system_i/lmb_bram/lmb_bram/ramb36_30 [1:1] ;
+			system_i/lmb_bram/lmb_bram/ramb36_31 [0:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+END_ADDRESS_MAP;

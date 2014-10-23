@@ -1,0 +1,22 @@
+microblaze_0
+LAB2A_SOURCES = lab2a.c 
+LAB2A_HEADERS = microblaze_0/include/xgpio.h microblaze_0/include/xparameters.h 
+LAB2A_CC = mb-gcc
+LAB2A_CC_SIZE = mb-size
+LAB2A_CC_OPT = -O2
+LAB2A_CFLAGS = 
+LAB2A_CC_SEARCH = # -B
+LAB2A_LIBPATH = -L./microblaze_0/lib/ # -L
+LAB2A_INCLUDES = -I./microblaze_0/include/  -Imicroblaze_0/include/ # -I
+LAB2A_LFLAGS = # -l
+LAB2A_LINKER_SCRIPT = lab2a/lab2a_linker_script.ld
+LAB2A_CC_DEBUG_FLAG =  -g 
+LAB2A_CC_PROFILE_FLAG = # -pg
+LAB2A_CC_GLOBPTR_FLAG= # -mxl-gp-opt
+LAB2A_MODE = executable
+LAB2A_LIBG_OPT = -$(LAB2A_MODE) microblaze_0
+LAB2A_CC_INFERRED_FLAGS= -mno-xl-soft-mul -mxl-pattern-compare -mcpu=v7.10.d 
+LAB2A_CC_START_ADDR_FLAG=  #  # -Wl,-defsym -Wl,_TEXT_START_ADDR=
+LAB2A_CC_STACK_SIZE_FLAG=  #  # -Wl,-defsym -Wl,_STACK_SIZE=
+LAB2A_CC_HEAP_SIZE_FLAG=  #  # -Wl,-defsym -Wl,_HEAP_SIZE=
+                  $(LAB2A_CC_INFERRED_FLAGS)  \

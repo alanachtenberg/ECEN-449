@@ -1,0 +1,46 @@
+Executing: compedklib -s isim -lp /homes/ugrad/alanachtenberg/ -zip_models -o /tmp/xil_ni7xZ6 -log_file /homes/ugrad/alanachtenberg/Lab3/pcores//multiply/devl/compedklib.log -X /tmp/xil_ni7xZ6 -c multiply_v1_00_a
+
+Scanning repositories
+Collecting HDL files
+Compiling pcores
+ERROR:: Cannot locate library proc_common_v2_00_a
+ERROR:: Cannot locate library plbv46_slave_single_v1_00_a
+Compiling multiply_v1_00_a
+Executing: vlogcomp -work multiply_v1_00_a /homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/verilog/user_logic.v
+
+ERROR:HDLCompiler:806 - "/homes/ugrad/alanachtenberg/Lab3/pcoresAnaltiply_v1_00_a/hdl/verilog/user_logic.v" Line 125. Syntax error near <
+ERROR:HDLCompiler:806 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/verilog/user_logic.v" Line 186. Syntax error near default
+ERROR:HDLCompiler:598 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/verilog/user_logic.v" Line 51. Module user_logic ignored due to previous errors
+Verilog file /homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/verilog/user_logic.v ignored due to errors
+ERROR:: Failed to execute vlogcomp -work multiply_v1_00_a /homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/verilog/user_logic.v : 
+Executing: vhpcomp -work multiply_v1_00_a /homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd
+
+Analyzing VHDL file /homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd
+Restoring VHDL parse-tree ieee.std_logic_1164 from /softwares/Linux/xilinx/10.1/ISE/vhdl/hdp/lin64/ieee/std_logic_1164.vdb
+Restoring VHDL parse-tree std.standard from /softwares/Linux/xilinx/10.1/ISE/vhdl/hdp/lin64/std/standard.vdb
+Restoring VHDL parse-tree ieee.std_logic_arith from /softwares/Linux/xilinx/10.1/ISE/vhdl/hdp/lin64/ieee/std_logic_arith.vdb
+Restoring VHDL parse-tree ieee.std_logic_unsigned from /softwares/Linux/xilinx/10.1/ISE/vhdl/hdp/lin64/ieee/std_logic_unsigned.vdb
+ERROR:HDLCompiler:104 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd" Line 66. 'proc_common_pkg' is not compiled in library proc_common_v2_00_a
+ERROR:HDLCompiler:104 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd" Line 67. 'ipif_pkg' is not compiled in library proc_common_v2_00_a
+ERROR:HDLCompiler:104 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd" Line 70. 'plbv46_slave_single' is not compiled in library plbv46_slave_single_v1_00_a
+ERROR:HDLCompiler:854 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd" Line 135. Unit multiply ignored due to previous errors
+ERROR:HDLCompiler:374 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd" Line 222. Entity multiply is not yet compiled
+ERROR:HDLCompiler:69 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd" Line 227. std_logic_vector is not declared
+ERROR:HDLCompiler:69 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd" Line 228. std_logic_vector is not declared
+ERROR:HDLCompiler:69 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd" Line 229. std_logic_vector is not declared
+ERROR:HDLCompiler:69 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd" Line 231. slv64_array_type is not declared
+ERROR:HDLCompiler:69 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd" Line 240. integer is not declared
+ERROR:HDLCompiler:69 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd" Line 241. integer is not declared
+ERROR:HDLCompiler:69 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd" Line 243. integer_array_type is not declared
+ERROR:HDLCompiler:69 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd" Line 253. integer is not declared
+ERROR:HDLCompiler:69 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd" Line 258. integer is not declared
+ERROR:HDLCompiler:69 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd" Line 260. integer is not declared
+ERROR:HDLCompiler:69 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd" Line 265. integer is not declared
+ERROR:HDLCompiler:69 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd" Line 266. integer is not declared
+ERROR:HDLCompiler:69 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd" Line 268. integer is not declared
+ERROR:HDLCompiler:69 - "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd" Line 273. std_logic is not declared
+Sorry, too many errors..
+ERROR:: Failed to execute vhpcomp -work multiply_v1_00_a /homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd : 
+Executing: zip -qr multiply_v1_00_a.zip multiply_v1_00_a
+
+Compilation completed, 4 errors.

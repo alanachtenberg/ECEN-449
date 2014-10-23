@@ -1,0 +1,117 @@
+Parsing PAO project file successfully ...
+Analyzing HDL source files ...
+Analyzing HDL source files successfully ...
+HDL language for the peripheral (top level) design unit multiply is vhdl ...
+INFO:MDT - Create temparary xst project file:
+   /homes/ugrad/alanachtenberg/Lab3/pcores/multiply.prj
+WARNING:HDLParsers:3497 - Ignoring Verilog File
+   "/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/verilog/user_lo
+   gic.v"
+Compiling vhdl file
+"/softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_
+00_a/hdl/vhdl/proc_common_pkg.vhd" in Library proc_common_v2_00_a.
+Package <proc_common_pkg> compiled.
+Package body <proc_common_pkg> compiled.
+Compiling vhdl file
+"/softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_
+00_a/hdl/vhdl/or_muxcy.vhd" in Library proc_common_v2_00_a.
+Entity <or_muxcy> compiled.
+Entity <or_muxcy> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_
+00_a/hdl/vhdl/family_support.vhd" in Library proc_common_v2_00_a.
+Package <family_support> compiled.
+Package body <family_support> compiled.
+Compiling vhdl file
+"/softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_
+00_a/hdl/vhdl/counter_f.vhd" in Library proc_common_v2_00_a.
+Entity <counter_f> compiled.
+Entity <counter_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_
+00_a/hdl/vhdl/pselect_f.vhd" in Library proc_common_v2_00_a.
+Entity <pselect_f> compiled.
+Entity <pselect_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_
+00_a/hdl/vhdl/or_gate128.vhd" in Library proc_common_v2_00_a.
+Entity <or_gate128> compiled.
+Entity <or_gate128> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_
+00_a/hdl/vhdl/ipif_pkg.vhd" in Library proc_common_v2_00_a.
+Package <ipif_pkg> compiled.
+Package body <ipif_pkg> compiled.
+Compiling vhdl file
+"/softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_si
+ngle_v1_00_a/hdl/vhdl/plb_address_decoder.vhd" in Library
+plbv46_slave_single_v1_00_a.
+Entity <plb_address_decoder> compiled.
+Entity <plb_address_decoder> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_si
+ngle_v1_00_a/hdl/vhdl/plb_slave_attachment.vhd" in Library
+plbv46_slave_single_v1_00_a.
+Entity <plb_slave_attachment> compiled.
+Entity <plb_slave_attachment> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/softwares/Linux/xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_si
+ngle_v1_00_a/hdl/vhdl/plbv46_slave_single.vhd" in Library
+plbv46_slave_single_v1_00_a.
+Entity <plbv46_slave_single> compiled.
+Entity <plbv46_slave_single> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/multiply.vhd"
+in Library multiply_v1_00_a.
+Entity <multiply> compiled.
+Entity <multiply> (Architecture <IMP>) compiled.
+
+
+Analyzing HDL attributes ...
+INFO:MDT - IPTYPE set to value : PERIPHERAL
+INFO:MDT - IMP_NETLIST set to value : TRUE
+INFO:MDT - HDL set to value : VHDL
+INFO:MDT - Infer bus clock [SPLB_Clk] for bus interface SPLB ...
+Copying file user_logic.v to
+/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/verilog/ ...
+Copying file multiply.vhd to
+/homes/ugrad/alanachtenberg/Lab3/pcores/multiply_v1_00_a/hdl/vhdl/ ...
+
+Simulation Library Compilation Wizard Xilinx EDK 10.1.03 Build EDK_K_SP3.6
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+
+-- Scanning repositories                    1  % complete,   0 errors
+-- Collecting HDL files                     5  % complete,   0 errors
+-- HDL files collected for 2 pcores         20 % complete,   0 errors
+-- Compiling pcores                         20 % complete,   0 errors
+-- Compiling multiply_v1_00_a               98 % complete,   2 errors
+-- Compilation completed, 4 errors.         100% complete,   4 errors
+See /homes/ugrad/alanachtenberg/Lab3/pcores//multiply/devl/compedklib.log for
+execution log.
+ISim simulation model generated successfully...
+
+Thank you for using Create and Import Peripheral Wizard! Please find your
+imported peripheral under /homes/ugrad/alanachtenberg/Lab3/pcores/multiply.
+
+Summary:
+
+  Logical library     : multiply
+  Version             : None
+  Bus interface(s)    : SPLB 
+
+The following sub-directories will be created:
+
+  - multiply/data
+  - multiply/hdl
+  - multiply/hdl/verilog
+  - multiply/hdl/vhdl
+
+
+
+The following files will be created under the multiply/data directory:
+
+  - multiply_v2_1_0.mpd
+  - multiply_v2_1_0.pao
+
+
