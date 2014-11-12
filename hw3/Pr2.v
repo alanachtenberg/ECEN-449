@@ -90,3 +90,12 @@ module ppm_to_pwm(ClkTimeFrame, ClkTime, PPM, PWM);
 	end
 	
 endmodule
+
+
+//PART C
+
+/*
+ PCM cannot be converted in real time. because PCM only needs to send log2(p)bits per time T
+while PPM has to send p bits per time T to represent the same amount of data.
+
+*/

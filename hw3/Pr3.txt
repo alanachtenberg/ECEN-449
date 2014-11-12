@@ -1,0 +1,40 @@
+
+Problem 3)
+
+	a)
+	
+	 area= (1*10+2*2+3*23+4*4+5*5+6*9+7*12+8*7+9*3+10*2)*10 um^2
+	 area= 3650 um^2(square micrometers)
+	 
+	 throughput= 1(input-instruction)/delay
+	 throughput= 1/10 instructions/ns
+	 
+	 latency= worst case delay
+	 latency= 10 * 1 ns= 10 ns
+
+	b)If you added registers between every lut, you could increase your clock
+	cycle significantly. Your clock period would only have to be ever slightly
+	greater than the delay of 1 lut and 1 register. Essentially we would be pipelining
+	the circuit. There would be no real benefit to throughtput to increasing your clock cycle this way
+	if you only ever wanted to run one input through the logic. However if you run multiple
+	inputs in quick succession you will greatly increase your throughput.
+	
+	The max frequency it can operate at with this method is 1/(1.5 ns)
+	which is 2/3 a Ghz!
+
+	c) area = oldarea + registers area
+	   area= 3650 + (1*2+2*23+3*4+4*5+5*9+6*12+7*7+8*3+9*2)*6 um^2
+	   area= 5378 um^2
+	   
+	   N= number of inputs-instructions//ran conssecutive	
+	   throughput = (N)/(1*latency+(N-1)*clock period)
+	   throughput = N/(14.5 ns + (N-1)*1.5 ns)
+	   for N= 1 throughput= 1/14.5 inst/ns
+	   for N= 10 throughput= 10/28= 5/14 inst/ns
+	   for N approching infinity throughput is 1/1.5 inst/ns
+	   of course N rarely approches infinity...
+	   
+	   latency= old latency + latentcy of registers on last level
+	   latency= 10ns + 9*.5 ns
+	   latency= 14.5 ns
+	
