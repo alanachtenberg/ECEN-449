@@ -1,0 +1,38 @@
+Problem 1)
+
+	a)
+	grep ^11 log.txt >> results.txt
+	
+	 Using >> we redirect the output of the grep command into our results file.
+	Since we know we are looking at a log file where lines always begins in a 
+	timestap we simply need to search for lines that start with 11. There is no 
+	need to	use regex to determine if the 11 is part of a date.
+
+	b)
+	echo How are you doing $USER? You are in $(pwd)
+
+	 The $ denotes a bash variable, $USER is the current user name.
+	Using the () around pwd allows you to use a command like you would
+	a variable.
+	
+	c)
+	top -U rickshaw
+	
+	 top is a unix/linux command line inteface for displaying the currently running
+	processes. Adding the -U option allows you to specify of which user the processes
+	must belong to, to be displayed.
+	
+	d)
+	which firefox
+	
+	 which will display the path to the executable targeted by the command firefox.
+	The & symbol just starts a process in the background, meaning that the location
+	of firefox and firefox & are the same.
+
+	e)
+	ln -s /home/users/rickshaw/file.txt linked_file
+
+	 This command creates a file "linked_file" that is symbolically linked to
+	/home/users/rickshaw.file.txt Any changes to linked_file are actually changes 
+	to file.txt. linked_file acts as a file pointer.
+	
