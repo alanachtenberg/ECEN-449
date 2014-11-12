@@ -1,0 +1,33 @@
+
+Problem 4)
+
+Part a)
+
+int bytes_read=0;
+char bytes[10];//buffer for bytes
+while (bytes_read<10){
+
+	if (Value read from R1==1){
+            store value read from R3 into bytes[bytes_read]
+	    ++bytes_read;
+	    write 1 to R2//notifies wifi card byte has been read
+	}
+	else
+	    wait for R1 to be equal to 1
+}
+
+Part b)
+
+char bytes[10];//buffer for bytes
+populate bytes with data to send
+int bytes_written=0;
+while (bytes_written<10){
+
+	if (Value read from R4!=1){
+            store value bytes[bytes_written] into R5
+	    ++bytes_written;
+	    write 1 to R4//notifies wifi card byte has been read
+	}
+	else
+	    wait for R4 to be equal to 0
+}
