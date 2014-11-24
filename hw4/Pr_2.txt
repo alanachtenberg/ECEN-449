@@ -1,0 +1,21 @@
+Problem 2)
+
+	a)
+	  Levelizing the circuit L3 is level 2 and L1 & L2 are level 1
+The max delay of L1 is from c (4*5+10=30 us). The max delay from L2 is
+from e (4*5+10= 30 us). The max delay from L2 is l1 (2*5+10= 20 us). Finally
+delay from L3 to the output is (4*5= 20 us). The total delay with the inputs at
+level 0 and the output at level 3 is 30+20+20 us = 70 us
+
+	b)
+	  The optimal placement of The luts is where L1 is placed in [2,2] L2 is placed
+in [2,1] and L3 is placed in [3,2]. The delay of the circuit is 45 us.
+
+This can be shown, because we have the delay of transmission being 5(i-j+k-l) and the delay
+of the lut being 10. ignoring the delay of the lut because it is constant we just need to minimize
+the total transmission delays. The min transmission delay for L1 is 5(i-j+k-l) where i and k are substituted
+for positions of a b and c that give the min and j&l is the position chosen for L1. The min transmission 
+delay for L2 is 5(i-j+k-l) where i and k are substituted for positions of a d and e that give the min and j&l
+is the positon chosen for L2. The delay of L3 is 5 (i-j+k-l) where i and k are positions of L1 and L2 and where j&l 
+is the position chosen for L3. Finally the delay fo the ouput is 5(i-(2)+k-(4)) where 2 and 4 is the position of the output and i&k
+are possible positions of L3. Substituing the above equations one can find a minimum solution.

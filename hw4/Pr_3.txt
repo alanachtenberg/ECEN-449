@@ -1,0 +1,19 @@
+Problem 3)
+
+a)
+  The minimum number of clock cycles would be when the interupt occured exactly on
+the posedge of the clock. 1000 cycles for the context switch and then 50 cycles for the handler.
+1050*(1/(1 Ghz))= 1.05 microseconds
+
+  The max would occur when the interupt occurs just after the posedge, meaning the processor would
+not detect the interupt until the next cycle. 1 cycle for waiting to detect, 1000 for the context, and
+50 for the handler
+1051*(1/(1 Ghz))= 1.051 microseconds
+
+b)
+  The minimum is when it occurs at the time it is being polled. Meaning it will only take 50 cycles to handle the event. 
+50 * 1 ns = 50 ns
+
+  The maximum is when it occurs just after being polled. It will take
+500 ns to be polled again and 50 ns to be handled
+500ns +50 ns = 550 ns

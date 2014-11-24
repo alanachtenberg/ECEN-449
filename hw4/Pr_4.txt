@@ -1,0 +1,15 @@
+Problem 4)
+
+a)
+  there are 40,000 clbs each with a 4 input lut which needs 16 bits to program. 
+40,000*16 = 640,000 bits
+
+b)
+  Since there are 199*199 interior interconnects, and 4*200 exterior interconnects 
+there are 199*199+800 interconnects. It takes 20 bits to program the switches on the 
+interconnect. (199*199+800)*20= 808,020 bits
+
+c)
+  There are 200 IO pads with 5 bits per pad. 200*5 = 1000 bits
+d)
+  The bits in the entire stream is 640,000+808,020+1000= 1449020 bits

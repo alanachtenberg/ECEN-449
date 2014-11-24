@@ -1,0 +1,23 @@
+Problem 1)
+
+Sythesis)
+	The sythesis stage is the same for ASIC and FPGA, hdl description
+is used to generate a netlist (boolean circuit).
+
+Technology Mapping)
+	For the FPGA the netlist is converted into a series of equivialent k input LUTs
+where each LUT implements any k input logic of the netlist. For the ASIC the  netlist is converted
+into a series of standard cells generally given by the ASIC manufacturer and typically gate level.
+
+Place)
+	For the FPGA the LUTs from our mapping is programmed to later be in LUTs in the FPGA. For
+the ASIC the standard cells are placed onto a region representing the yet to be manufactured ASIC
+
+Route)
+	For the FPGA the interconnections are programmed on the existing FPGA. For the ASIC the interconnections
+of the standard cells are placed onto the same region as the standard cells and are yet to be manufactured.
+
+Output Generation)
+	For the FPGA a bitstream is generated consisting of the bits from the Place step and the bits from the Route
+step and is serially programmed into existing hardware (can take a couple seconds). For the ASIC the region information
+is sent to a manufacturer in the form of a file which then produces the physical IC's (can take a couple of months).
