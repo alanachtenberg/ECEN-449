@@ -5,9 +5,9 @@ a)
 40,000*16 = 640,000 bits
 
 b)
-  Since there are 199*199 interior switchboxes, and 4*200 exterior switchboxes 
-there are 199*199+800 switchboxes. It takes 20 bits to program the interconnects on the 
-switchboxes. (199*199+800)*20= 808,020 bits
+  Since there are 199*199 interior interconnects, and 4*200 exterior interconnects 
+there are 199*199+800 interconnects. It takes 20 bits to program the switches on the 
+interconnect. (199*199+800)*20= 808,020 bits
 
 c)
   There are 200 IO pads with 5 bits per pad. 200*5 = 1000 bits
